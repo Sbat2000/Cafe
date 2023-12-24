@@ -9,7 +9,7 @@ import UIKit
 
 class RegistrationModuleBuilder {
     static func build() -> UIViewController {
-        let interactor = RegistrationInteractor()
+        let interactor = RegistrationInteractor(authService: AppDependencies.shared.authService)
         let router = RegistrationRouter()
         let presenter = RegistrationPresenter(interactor: interactor, router: router)
         let viewController = RegistrationViewController()

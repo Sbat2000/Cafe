@@ -6,8 +6,14 @@
 //
 
 protocol RegistrationRouterProtocol {
+    func navigateToLogin()
 }
 
 class RegistrationRouter: RegistrationRouterProtocol {
     weak var viewController: RegistrationViewController?
+    
+    func navigateToLogin() {
+        let loginViewController = LoginModuleBuilder.build()
+        viewController?.navigationController?.pushViewController(loginViewController, animated: true)
+    }
 }
