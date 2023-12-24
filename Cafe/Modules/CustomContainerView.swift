@@ -10,7 +10,7 @@ import UIKit
 class CustomContainerView: UIView {
     
     private let label: UILabel
-    private let textField: UITextField
+    let textField: UITextField
     
     var textFieldDelegate: UITextFieldDelegate? {
         didSet {
