@@ -120,7 +120,7 @@ private extension LoginViewController {
 
 //MARK: - Private actions
 
-extension LoginViewController {
+private extension LoginViewController {
     @objc
     func loginButtonTapped() {
         presenter?.loginButtonTapped()

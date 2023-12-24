@@ -35,6 +35,11 @@
 		E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4A72B3872D3008B6A15 /* AppDependencies.swift */; };
 		E207A4AD2B387E08008B6A15 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */; };
 		E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */; };
+		E207A4B82B388597008B6A15 /* CoffeeShopListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */; };
+		E207A4B92B388597008B6A15 /* CoffeeShopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */; };
+		E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */; };
+		E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */; };
+		E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +66,11 @@
 		E207A4972B3864E1008B6A15 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		E207A4A72B3872D3008B6A15 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListPresenter.swift; sourceTree = "<group>"; };
+		E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListRouter.swift; sourceTree = "<group>"; };
+		E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListViewController.swift; sourceTree = "<group>"; };
+		E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,7 @@
 		E207A4512B3557ED008B6A15 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4B12B3884B5008B6A15 /* Custom UI */,
 				E207A4892B3813F1008B6A15 /* Services */,
 				E207A4832B3560F6008B6A15 /* Modules */,
 				E207A4522B3557ED008B6A15 /* AppDelegate.swift */,
@@ -114,9 +125,9 @@
 		E207A4832B3560F6008B6A15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4B22B3884C1008B6A15 /* Coffee */,
 				E207A4922B3864D0008B6A15 /* Login */,
 				E207A4842B3560FF008B6A15 /* Registration */,
-				E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -172,6 +183,26 @@
 				E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */,
 			);
 			path = "Token Storage";
+			sourceTree = "<group>";
+		};
+		E207A4B12B3884B5008B6A15 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		E207A4B22B3884C1008B6A15 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */,
+				E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */,
+				E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */,
+				E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */,
+				E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */,
+			);
+			path = Coffee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +291,12 @@
 			files = (
 				E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */,
 				E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */,
+				E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */,
 				E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */,
 				E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */,
 				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
 				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
+				E207A4B92B388597008B6A15 /* CoffeeShopListPresenter.swift in Sources */,
 				E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */,
 				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
 				E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */,
@@ -273,8 +306,11 @@
 				E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */,
 				E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */,
 				E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */,
+				E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */,
+				E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */,
 				E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */,
 				E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */,
+				E207A4B82B388597008B6A15 /* CoffeeShopListModuleBuilder.swift in Sources */,
 				E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */,
 				E207A48F2B3826B1008B6A15 /* UserModel.swift in Sources */,
 			);
