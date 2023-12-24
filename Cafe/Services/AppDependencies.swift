@@ -11,8 +11,10 @@ final class AppDependencies {
     static let shared = AppDependencies()
     
     let authService: AuthServiceProtocol
+    let tokenStorage: TokenStorageProtocol
     
     private init() {
         authService = AuthService()
+        tokenStorage = TokenStorage()
     }
 }

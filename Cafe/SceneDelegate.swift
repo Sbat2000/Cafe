@@ -16,6 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
         let navigationVC = RegistrationModuleBuilder.build()
+        let token = AppDependencies.shared.tokenStorage.getToken()
+        print(token)
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }

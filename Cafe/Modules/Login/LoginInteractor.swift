@@ -13,9 +13,11 @@ class LoginInteractor: LoginInteractorProtocol {
     weak var presenter: LoginPresenterProtocol?
     
     var authService: AuthServiceProtocol
+    private var tokenStorage: TokenStorageProtocol
     
-    init(authService: AuthServiceProtocol) {
+    init(authService: AuthServiceProtocol, tokenStorage: TokenStorageProtocol) {
         self.authService = authService
+        self.tokenStorage = tokenStorage
     }
     
     func login(user: UserModel) {
@@ -23,6 +25,7 @@ class LoginInteractor: LoginInteractorProtocol {
             switch result {
             case .success(let token):
                 print("Получен token: \(token)")
+                self?.tokenStorage.saveToken(token.token)
             case .failure(let error):
                 print("Ошибка получения токена: \(error.localizedDescription)")
             }

@@ -33,6 +33,8 @@
 		E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4962B3864E1008B6A15 /* LoginViewController.swift */; };
 		E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4972B3864E1008B6A15 /* LoginInteractor.swift */; };
 		E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4A72B3872D3008B6A15 /* AppDependencies.swift */; };
+		E207A4AD2B387E08008B6A15 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */; };
+		E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,7 @@
 		E207A4962B3864E1008B6A15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E207A4972B3864E1008B6A15 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		E207A4A72B3872D3008B6A15 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 				E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */,
 				E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */,
 				E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */,
+				E207A4AD2B387E08008B6A15 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,8 +138,8 @@
 		E207A4892B3813F1008B6A15 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
-				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+				E207A4AA2B387DE0008B6A15 /* Token Storage */,
+				E207A4A92B387DD0008B6A15 /* Network Layer */,
 				E207A4A72B3872D3008B6A15 /* AppDependencies.swift */,
 			);
 			path = Services;
@@ -151,6 +155,23 @@
 				E207A4952B3864E1008B6A15 /* LoginRouter.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E207A4A92B387DD0008B6A15 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
+				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		E207A4AA2B387DE0008B6A15 /* Token Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */,
+			);
+			path = "Token Storage";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +197,7 @@
 				E207A4732B355A2F008B6A15 /* Moya */,
 				E207A4752B355A2F008B6A15 /* ReactiveMoya */,
 				E207A4772B355A2F008B6A15 /* RxMoya */,
+				E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */,
 			);
 			productName = Cafe;
 			productReference = E207A44F2B3557ED008B6A15 /* Cafe.app */;
@@ -208,6 +230,7 @@
 			packageReferences = (
 				E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */,
+				E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = E207A4502B3557ED008B6A15 /* Products */;
 			projectDirPath = "";
@@ -241,6 +264,7 @@
 				E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */,
 				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
 				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
+				E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */,
 				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
 				E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */,
 				E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */,
@@ -489,6 +513,14 @@
 				minimumVersion = 15.0.3;
 			};
 		};
+		E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -521,6 +553,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
