@@ -11,10 +11,12 @@ protocol RegistrationInteractorProtocol: AnyObject {
 
 class RegistrationInteractor: RegistrationInteractorProtocol {
     weak var presenter: RegistrationPresenterProtocol?
-    var authService: AuthServiceProtocol
+    private var authService: AuthServiceProtocol
+    private var tokenStorage: TokenStorageProtocol
     
-    init(authService: AuthServiceProtocol) {
+    init(authService: AuthServiceProtocol, tokenStorage: TokenStorageProtocol) {
         self.authService = authService
+        self.tokenStorage = tokenStorage
     }
     
     func register(user: UserModel) {
@@ -22,6 +24,7 @@ class RegistrationInteractor: RegistrationInteractorProtocol {
             switch result {
             case .success(let token):
                 print("Регистрация успешна!, token: \(token)")
+                self?.tokenStorage.saveToken(token.token)
             case .failure(let error):
                 print("Ошибка регистрации: \(error.localizedDescription)")
             }

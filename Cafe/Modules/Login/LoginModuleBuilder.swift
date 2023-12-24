@@ -9,7 +9,7 @@ import UIKit
 
 class LoginModuleBuilder {
     static func build() -> LoginViewController {
-        let interactor = LoginInteractor(authService: AppDependencies.shared.authService)
+        let interactor = LoginInteractor(authService: AppDependencies.shared.authService, tokenStorage: AppDependencies.shared.tokenStorage)
         let router = LoginRouter()
         let presenter = LoginPresenter(interactor: interactor, router: router)
         let viewController = LoginViewController()
