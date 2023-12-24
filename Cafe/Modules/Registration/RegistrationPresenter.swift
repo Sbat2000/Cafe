@@ -9,6 +9,8 @@ import Foundation
 
 protocol RegistrationPresenterProtocol: AnyObject {
     func checkRegistrationAvailability()
+    func registrationButtonTapped()
+    func loginButtonTapped()
 }
 
 class RegistrationPresenter {
@@ -40,7 +42,17 @@ extension RegistrationPresenter: RegistrationPresenterProtocol {
         let isEmailValid = isValidEmail(email)
         let arePasswordsEqual = !password.isEmpty && password == confirmPassword
         let isButtonEnabled = isEmailValid && arePasswordsEqual
-        print(isButtonEnabled)
         view?.setRegistrationButtonEnabled(isButtonEnabled)
+    }
+    
+    func registrationButtonTapped() {
+        guard let email = view?.getEmail(),
+              let password = view?.getPassword() else { return }
+        let user = UserModel(login: email, password: password)
+        interactor.register(user: user)
+    }
+    
+    func loginButtonTapped() {
+        router.navigateToLogin()
     }
 }

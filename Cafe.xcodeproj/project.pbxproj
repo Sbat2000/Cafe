@@ -24,6 +24,15 @@
 		E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */; };
 		E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */; };
 		E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48A2B38140B008B6A15 /* AuthAPI.swift */; };
+		E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48C2B38264D008B6A15 /* AuthService.swift */; };
+		E207A48F2B3826B1008B6A15 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48E2B3826B1008B6A15 /* UserModel.swift */; };
+		E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4902B385EB0008B6A15 /* AuthToken.swift */; };
+		E207A4982B3864E1008B6A15 /* LoginModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */; };
+		E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4942B3864E1008B6A15 /* LoginPresenter.swift */; };
+		E207A49A2B3864E1008B6A15 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4952B3864E1008B6A15 /* LoginRouter.swift */; };
+		E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4962B3864E1008B6A15 /* LoginViewController.swift */; };
+		E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4972B3864E1008B6A15 /* LoginInteractor.swift */; };
+		E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4A72B3872D3008B6A15 /* AppDependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +49,15 @@
 		E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
 		E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
 		E207A48A2B38140B008B6A15 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		E207A48C2B38264D008B6A15 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E207A48E2B3826B1008B6A15 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E207A4902B385EB0008B6A15 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4942B3864E1008B6A15 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E207A4952B3864E1008B6A15 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		E207A4962B3864E1008B6A15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E207A4972B3864E1008B6A15 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		E207A4A72B3872D3008B6A15 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +110,7 @@
 		E207A4832B3560F6008B6A15 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4922B3864D0008B6A15 /* Login */,
 				E207A4842B3560FF008B6A15 /* Registration */,
 				E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */,
 			);
@@ -101,11 +120,13 @@
 		E207A4842B3560FF008B6A15 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
-				E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */,
-				E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */,
-				E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */,
 				E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */,
 				E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */,
+				E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */,
+				E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */,
+				E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */,
+				E207A48E2B3826B1008B6A15 /* UserModel.swift */,
+				E207A4902B385EB0008B6A15 /* AuthToken.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -114,8 +135,22 @@
 			isa = PBXGroup;
 			children = (
 				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
+				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+				E207A4A72B3872D3008B6A15 /* AppDependencies.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		E207A4922B3864D0008B6A15 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4962B3864E1008B6A15 /* LoginViewController.swift */,
+				E207A4972B3864E1008B6A15 /* LoginInteractor.swift */,
+				E207A4942B3864E1008B6A15 /* LoginPresenter.swift */,
+				E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */,
+				E207A4952B3864E1008B6A15 /* LoginRouter.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,15 +235,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */,
 				E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */,
 				E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */,
+				E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */,
 				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
 				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
 				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
+				E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */,
 				E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */,
+				E207A49A2B3864E1008B6A15 /* LoginRouter.swift in Sources */,
+				E207A4982B3864E1008B6A15 /* LoginModuleBuilder.swift in Sources */,
 				E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */,
+				E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */,
+				E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */,
 				E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */,
 				E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */,
+				E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */,
+				E207A48F2B3826B1008B6A15 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
