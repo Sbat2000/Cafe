@@ -9,19 +9,37 @@
 /* Begin PBXBuildFile section */
 		E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4522B3557ED008B6A15 /* AppDelegate.swift */; };
 		E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4542B3557ED008B6A15 /* SceneDelegate.swift */; };
-		E207A4572B3557ED008B6A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4562B3557ED008B6A15 /* ViewController.swift */; };
 		E207A45C2B3557EF008B6A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E207A45B2B3557EF008B6A15 /* Assets.xcassets */; };
 		E207A45F2B3557EF008B6A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A45D2B3557EF008B6A15 /* LaunchScreen.storyboard */; };
+		E207A4682B355994008B6A15 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4672B355994008B6A15 /* SnapKit */; };
+		E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4692B355994008B6A15 /* SnapKit-Dynamic */; };
+		E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4712B355A2F008B6A15 /* CombineMoya */; };
+		E207A4742B355A2F008B6A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4732B355A2F008B6A15 /* Moya */; };
+		E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4752B355A2F008B6A15 /* ReactiveMoya */; };
+		E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4772B355A2F008B6A15 /* RxMoya */; };
+		E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */; };
+		E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */; };
+		E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */; };
+		E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */; };
+		E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */; };
+		E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */; };
+		E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48A2B38140B008B6A15 /* AuthAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E207A44F2B3557ED008B6A15 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E207A4522B3557ED008B6A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E207A4542B3557ED008B6A15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E207A4562B3557ED008B6A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E207A45B2B3557EF008B6A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E207A45E2B3557EF008B6A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E207A4602B3557EF008B6A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
+		E207A48A2B38140B008B6A15 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */,
+				E207A4682B355994008B6A15 /* SnapKit in Frameworks */,
+				E207A4742B355A2F008B6A15 /* Moya in Frameworks */,
+				E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */,
+				E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */,
+				E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +78,44 @@
 		E207A4512B3557ED008B6A15 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4892B3813F1008B6A15 /* Services */,
+				E207A4832B3560F6008B6A15 /* Modules */,
 				E207A4522B3557ED008B6A15 /* AppDelegate.swift */,
 				E207A4542B3557ED008B6A15 /* SceneDelegate.swift */,
-				E207A4562B3557ED008B6A15 /* ViewController.swift */,
 				E207A45B2B3557EF008B6A15 /* Assets.xcassets */,
 				E207A45D2B3557EF008B6A15 /* LaunchScreen.storyboard */,
 				E207A4602B3557EF008B6A15 /* Info.plist */,
 			);
 			path = Cafe;
+			sourceTree = "<group>";
+		};
+		E207A4832B3560F6008B6A15 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4842B3560FF008B6A15 /* Registration */,
+				E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E207A4842B3560FF008B6A15 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */,
+				E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */,
+				E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */,
+				E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */,
+				E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		E207A4892B3813F1008B6A15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +134,14 @@
 			dependencies = (
 			);
 			name = Cafe;
+			packageProductDependencies = (
+				E207A4672B355994008B6A15 /* SnapKit */,
+				E207A4692B355994008B6A15 /* SnapKit-Dynamic */,
+				E207A4712B355A2F008B6A15 /* CombineMoya */,
+				E207A4732B355A2F008B6A15 /* Moya */,
+				E207A4752B355A2F008B6A15 /* ReactiveMoya */,
+				E207A4772B355A2F008B6A15 /* RxMoya */,
+			);
 			productName = Cafe;
 			productReference = E207A44F2B3557ED008B6A15 /* Cafe.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +170,10 @@
 				Base,
 			);
 			mainGroup = E207A4462B3557ED008B6A15;
+			packageReferences = (
+				E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = E207A4502B3557ED008B6A15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E207A4572B3557ED008B6A15 /* ViewController.swift in Sources */,
+				E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */,
 				E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */,
+				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
+				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
+				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
+				E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */,
 				E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */,
+				E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */,
+				E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +427,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E207A4672B355994008B6A15 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E207A4692B355994008B6A15 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		E207A4712B355A2F008B6A15 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E207A4732B355A2F008B6A15 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E207A4752B355A2F008B6A15 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E207A4772B355A2F008B6A15 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E207A4472B3557ED008B6A15 /* Project object */;
 }
