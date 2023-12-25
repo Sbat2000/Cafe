@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Войти", for: .normal)
-        button.tintColor = UIColor(resource: .buttonTitle)
+        button.tintColor = UIColor(resource: .lightBrown)
         button.layer.cornerRadius = 24.5
         button.backgroundColor = .gray
         button.isUserInteractionEnabled = false
@@ -51,6 +51,7 @@ class LoginViewController: UIViewController {
     deinit {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        print("Deinit LoginViewController")
     }
 }
 
@@ -120,7 +121,7 @@ private extension LoginViewController {
 
 //MARK: - Private actions
 
-extension LoginViewController {
+private extension LoginViewController {
     @objc
     func loginButtonTapped() {
         presenter?.loginButtonTapped()

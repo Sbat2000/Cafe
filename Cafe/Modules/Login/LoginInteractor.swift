@@ -26,6 +26,7 @@ class LoginInteractor: LoginInteractorProtocol {
             case .success(let token):
                 print("Получен token: \(token)")
                 self?.tokenStorage.saveToken(token.token)
+                self?.presenter?.loginSucceeded()
             case .failure(let error):
                 print("Ошибка получения токена: \(error.localizedDescription)")
             }

@@ -8,7 +8,7 @@
 import UIKit
 
 class RegistrationModuleBuilder {
-    static func build() -> UIViewController {
+    static func build() -> RegistrationViewController {
         let interactor = RegistrationInteractor(authService: AppDependencies.shared.authService, tokenStorage: AppDependencies.shared.tokenStorage)
         let router = RegistrationRouter()
         let presenter = RegistrationPresenter(interactor: interactor, router: router)
@@ -17,7 +17,6 @@ class RegistrationModuleBuilder {
         viewController.presenter = presenter
         interactor.presenter = presenter
         router.viewController = viewController
-        let navController = UINavigationController(rootViewController: viewController)
-        return navController
+        return viewController
     }
 }

@@ -9,6 +9,7 @@ import Foundation
 protocol LoginPresenterProtocol: AnyObject {
     func loginButtonTapped()
     func checkLoginAvailability()
+    func loginSucceeded()
 }
 
 class LoginPresenter {
@@ -46,5 +47,9 @@ extension LoginPresenter: LoginPresenterProtocol {
         let isEmailValid = isValidEmail(email)
         let isButtonEnabled = isEmailValid && !password.isEmpty
         view?.setLoginButtonEnabled(isButtonEnabled)
+    }
+    
+    func loginSucceeded() {
+        router.navigateToCoffeShopList()
     }
 }
