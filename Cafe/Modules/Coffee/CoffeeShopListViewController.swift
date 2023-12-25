@@ -6,8 +6,10 @@
 //
 
 import UIKit
+import CoreLocation
 
 protocol CoffeeShopListViewProtocol: AnyObject {
+    func updateCoffeeTableView()
 }
 
 class CoffeeShopListViewController: UIViewController {
@@ -15,7 +17,7 @@ class CoffeeShopListViewController: UIViewController {
     private let onMapButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("На карте", for: .normal)
-        button.tintColor = UIColor(resource: .buttonTitle)
+        button.tintColor = UIColor(resource: .lightBrown)
         button.layer.cornerRadius = 24.5
         button.backgroundColor = UIColor(resource: .darkBrown)
         button.addTarget(self, action: #selector(onMapButtonTapped), for: .touchUpInside)
@@ -24,17 +26,17 @@ class CoffeeShopListViewController: UIViewController {
     
     private let coffeeTableView: UITableView = {
         let tableView = UITableView()
-        tableView.backgroundColor = .gray
         return tableView
     }()
     
     // MARK: - Public
     var presenter: CoffeeShopListPresenterProtocol?
-
+    
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initialize()
+        presenter?.refreshCoffeeShops()
     }
 }
 
@@ -43,6 +45,7 @@ private extension CoffeeShopListViewController {
     func initialize() {
         setupUI()
         setupConstraints()
+        setupTableView()
     }
     
     func setupUI() {
@@ -69,6 +72,13 @@ private extension CoffeeShopListViewController {
             make.bottom.equalTo(onMapButton.snp.top).inset(-20)
         }
     }
+    
+    func setupTableView() {
+        coffeeTableView.dataSource = self
+        coffeeTableView.delegate = self
+        coffeeTableView.register(CoffeeShopTableViewCell.self, forCellReuseIdentifier: "CoffeeShopCell")
+        coffeeTableView.separatorStyle = .none
+    }
 }
 
 private extension CoffeeShopListViewController {
@@ -80,4 +90,33 @@ private extension CoffeeShopListViewController {
 
 // MARK: - CoffeeShopListViewProtocol
 extension CoffeeShopListViewController: CoffeeShopListViewProtocol {
+    func updateCoffeeTableView() {
+        coffeeTableView.reloadData()
+    }
+    
+}
+
+extension CoffeeShopListViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        presenter?.getCoffeesCount() ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        71
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CoffeeShopCell", for: indexPath) as? CoffeeShopTableViewCell,
+           let coffeeShop = presenter?.getCoffeeShop(at: indexPath) {
+            cell.configure(with: coffeeShop)
+            cell.selectionStyle = .none
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+}
+
+extension CoffeeShopListViewController: CLLocationManagerDelegate {
+    
 }

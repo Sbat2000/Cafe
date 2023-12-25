@@ -8,8 +8,8 @@
 import UIKit
 
 class CoffeeShopListModuleBuilder {
-    static func build() -> UIViewController {
-        let interactor = CoffeeShopListInteractor()
+    static func build() -> CoffeeShopListViewController {
+        let interactor = CoffeeShopListInteractor(coffeeService: AppDependencies.shared.coffeeService, tokenStorage: AppDependencies.shared.tokenStorage, locationManager: AppDependencies.shared.locationManager)
         let router = CoffeeShopListRouter()
         let presenter = CoffeeShopListPresenter(interactor: interactor, router: router)
         let viewController = CoffeeShopListViewController()
@@ -17,7 +17,6 @@ class CoffeeShopListModuleBuilder {
         viewController.presenter = presenter
         interactor.presenter = presenter
         router.viewController = viewController
-        let navController = UINavigationController(rootViewController: viewController)
-        return navController
+        return viewController
     }
 }

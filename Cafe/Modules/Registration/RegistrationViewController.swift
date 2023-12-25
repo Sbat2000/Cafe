@@ -27,7 +27,7 @@ class RegistrationViewController: UIViewController {
     private let registrationButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Регистрация", for: .normal)
-        button.tintColor = UIColor(resource: .buttonTitle)
+        button.tintColor = UIColor(resource: .lightBrown)
         button.layer.cornerRadius = 24.5
         button.backgroundColor = .gray
         button.isUserInteractionEnabled = false
@@ -38,7 +38,7 @@ class RegistrationViewController: UIViewController {
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("У меня уже есть аккаунт", for: .normal)
-        button.tintColor = UIColor(resource: .buttonTitle)
+        button.tintColor = UIColor(resource: .lightBrown)
         button.layer.cornerRadius = 24.5
         button.backgroundColor = .darkBrown
         button.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)

@@ -40,6 +40,12 @@
 		E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */; };
 		E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */; };
 		E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */; };
+		E207A4C02B392285008B6A15 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */; };
+		E207A4C22B39255D008B6A15 /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C12B39255D008B6A15 /* CoffeeService.swift */; };
+		E207A4C62B392625008B6A15 /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C52B392625008B6A15 /* CoffeeShop.swift */; };
+		E207A4C92B393868008B6A15 /* CoffeeShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */; };
+		E207A4CB2B39476D008B6A15 /* CoffeShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */; };
+		E207A4CD2B394E02008B6A15 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4CC2B394E02008B6A15 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +77,12 @@
 		E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListRouter.swift; sourceTree = "<group>"; };
 		E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListViewController.swift; sourceTree = "<group>"; };
 		E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListInteractor.swift; sourceTree = "<group>"; };
+		E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
+		E207A4C12B39255D008B6A15 /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
+		E207A4C52B392625008B6A15 /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableViewCell.swift; sourceTree = "<group>"; };
+		E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeShopViewModel.swift; sourceTree = "<group>"; };
+		E207A4CC2B394E02008B6A15 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +152,7 @@
 				E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */,
 				E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */,
 				E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */,
-				E207A48E2B3826B1008B6A15 /* UserModel.swift */,
-				E207A4902B385EB0008B6A15 /* AuthToken.swift */,
+				E207A4C32B392607008B6A15 /* Models */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 				E207A4AA2B387DE0008B6A15 /* Token Storage */,
 				E207A4A92B387DD0008B6A15 /* Network Layer */,
 				E207A4A72B3872D3008B6A15 /* AppDependencies.swift */,
+				E207A4CC2B394E02008B6A15 /* LocationManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -171,8 +183,8 @@
 		E207A4A92B387DD0008B6A15 /* Network Layer */ = {
 			isa = PBXGroup;
 			children = (
-				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
-				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+				E207A4BE2B392213008B6A15 /* Coffee */,
+				E207A4BD2B392205008B6A15 /* Auth */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -196,13 +208,59 @@
 		E207A4B22B3884C1008B6A15 /* Coffee */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4C72B393854008B6A15 /* TableViewCells */,
 				E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */,
 				E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */,
 				E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */,
 				E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */,
 				E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */,
+				E207A4C42B392615008B6A15 /* Models */,
 			);
 			path = Coffee;
+			sourceTree = "<group>";
+		};
+		E207A4BD2B392205008B6A15 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
+				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E207A4BE2B392213008B6A15 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */,
+				E207A4C12B39255D008B6A15 /* CoffeeService.swift */,
+			);
+			path = Coffee;
+			sourceTree = "<group>";
+		};
+		E207A4C32B392607008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48E2B3826B1008B6A15 /* UserModel.swift */,
+				E207A4902B385EB0008B6A15 /* AuthToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E207A4C42B392615008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4C52B392625008B6A15 /* CoffeeShop.swift */,
+				E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E207A4C72B393854008B6A15 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,16 +347,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E207A4C62B392625008B6A15 /* CoffeeShop.swift in Sources */,
+				E207A4C02B392285008B6A15 /* CoffeeAPI.swift in Sources */,
 				E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */,
+				E207A4C22B39255D008B6A15 /* CoffeeService.swift in Sources */,
 				E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */,
 				E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */,
 				E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */,
 				E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */,
 				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
+				E207A4C92B393868008B6A15 /* CoffeeShopTableViewCell.swift in Sources */,
 				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
 				E207A4B92B388597008B6A15 /* CoffeeShopListPresenter.swift in Sources */,
 				E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */,
 				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
+				E207A4CB2B39476D008B6A15 /* CoffeShopViewModel.swift in Sources */,
 				E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */,
 				E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */,
 				E207A49A2B3864E1008B6A15 /* LoginRouter.swift in Sources */,
@@ -306,6 +369,7 @@
 				E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */,
 				E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */,
 				E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */,
+				E207A4CD2B394E02008B6A15 /* LocationManager.swift in Sources */,
 				E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */,
 				E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */,
 				E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */,
