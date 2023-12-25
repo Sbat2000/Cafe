@@ -11,8 +11,6 @@
 		E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4542B3557ED008B6A15 /* SceneDelegate.swift */; };
 		E207A45C2B3557EF008B6A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E207A45B2B3557EF008B6A15 /* Assets.xcassets */; };
 		E207A45F2B3557EF008B6A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A45D2B3557EF008B6A15 /* LaunchScreen.storyboard */; };
-		E207A4682B355994008B6A15 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4672B355994008B6A15 /* SnapKit */; };
-		E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4692B355994008B6A15 /* SnapKit-Dynamic */; };
 		E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4712B355A2F008B6A15 /* CombineMoya */; };
 		E207A4742B355A2F008B6A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4732B355A2F008B6A15 /* Moya */; };
 		E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4752B355A2F008B6A15 /* ReactiveMoya */; };
@@ -66,6 +64,7 @@
 		E207A4FA2B39CA28008B6A15 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4F92B39CA28008B6A15 /* OrderItem.swift */; };
 		E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4FC2B39DEE5008B6A15 /* ProgressHUD */; };
 		E207A4FF2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */; };
+		E29CA4932B39EE4800285CBB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E29CA4922B39EE4800285CBB /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,10 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */,
-				E207A4682B355994008B6A15 /* SnapKit in Frameworks */,
+				E29CA4932B39EE4800285CBB /* SnapKit in Frameworks */,
 				E207A4742B355A2F008B6A15 /* Moya in Frameworks */,
 				E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */,
-				E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */,
 				E207A4E72B39A564008B6A15 /* Kingfisher in Frameworks */,
 				E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */,
 				E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */,
@@ -394,8 +392,6 @@
 			);
 			name = Cafe;
 			packageProductDependencies = (
-				E207A4672B355994008B6A15 /* SnapKit */,
-				E207A4692B355994008B6A15 /* SnapKit-Dynamic */,
 				E207A4712B355A2F008B6A15 /* CombineMoya */,
 				E207A4732B355A2F008B6A15 /* Moya */,
 				E207A4752B355A2F008B6A15 /* ReactiveMoya */,
@@ -403,6 +399,7 @@
 				E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */,
 				E207A4E62B39A564008B6A15 /* Kingfisher */,
 				E207A4FC2B39DEE5008B6A15 /* ProgressHUD */,
+				E29CA4922B39EE4800285CBB /* SnapKit */,
 			);
 			productName = Cafe;
 			productReference = E207A44F2B3557ED008B6A15 /* Cafe.app */;
@@ -433,11 +430,11 @@
 			);
 			mainGroup = E207A4462B3557ED008B6A15;
 			packageReferences = (
-				E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */,
 				E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = E207A4502B3557ED008B6A15 /* Products */;
 			projectDirPath = "";
@@ -733,14 +730,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.6.0;
-			};
-		};
 		E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya";
@@ -773,19 +762,17 @@
 				minimumVersion = 14.1.0;
 			};
 		};
+		E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E207A4672B355994008B6A15 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		E207A4692B355994008B6A15 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E207A4662B355994008B6A15 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		E207A4712B355A2F008B6A15 /* CombineMoya */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
@@ -820,6 +807,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
 			productName = ProgressHUD;
+		};
+		E29CA4922B39EE4800285CBB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

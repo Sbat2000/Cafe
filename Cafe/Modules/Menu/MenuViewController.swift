@@ -128,6 +128,8 @@ extension MenuViewController: UICollectionViewDataSource {
         if let orderItem = presenter?.getOrderItem(for: menuItem) {
             let count = orderItem.quantity
             cell.setQuantityLabel(count: count)
+        } else {
+            cell.setQuantityLabel(count: 0)
         }
         cell.delegate = presenter
         return cell

@@ -23,7 +23,7 @@ extension MenuAPI: TargetType {
         case .getMenu(_, let id):
             "/location/\(id)/menu"
         }
-    }
+     }
     
     var method: Moya.Method {
         switch self {

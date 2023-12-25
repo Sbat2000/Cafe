@@ -109,7 +109,7 @@ final class MenuItemCell: UICollectionViewCell {
     }
     
     func setQuantityLabel(count: Int) {
-        quantityLabel.text = "\(count)"
+        quantity = count
     }
     
     
