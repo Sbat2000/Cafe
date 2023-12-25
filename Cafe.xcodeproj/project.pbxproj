@@ -64,6 +64,8 @@
 		E207A4F42B39C2C2008B6A15 /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4EF2B39C2C2008B6A15 /* OrderInteractor.swift */; };
 		E207A4F72B39C5C5008B6A15 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4F62B39C5C5008B6A15 /* OrderTableViewCell.swift */; };
 		E207A4FA2B39CA28008B6A15 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4F92B39CA28008B6A15 /* OrderItem.swift */; };
+		E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4FC2B39DEE5008B6A15 /* ProgressHUD */; };
+		E207A4FF2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,7 @@
 		E207A4EF2B39C2C2008B6A15 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
 		E207A4F62B39C5C5008B6A15 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		E207A4F92B39CA28008B6A15 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 				E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */,
 				E207A4682B355994008B6A15 /* SnapKit in Frameworks */,
 				E207A4742B355A2F008B6A15 /* Moya in Frameworks */,
+				E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */,
 				E207A46A2B355994008B6A15 /* SnapKit-Dynamic in Frameworks */,
 				E207A4E72B39A564008B6A15 /* Kingfisher in Frameworks */,
 				E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */,
@@ -203,6 +207,7 @@
 				E207A4A72B3872D3008B6A15 /* AppDependencies.swift */,
 				E207A4CC2B394E02008B6A15 /* LocationManager.swift */,
 				E207A4E82B39BBE7008B6A15 /* OrderService.swift */,
+				E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				E207A4772B355A2F008B6A15 /* RxMoya */,
 				E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */,
 				E207A4E62B39A564008B6A15 /* Kingfisher */,
+				E207A4FC2B39DEE5008B6A15 /* ProgressHUD */,
 			);
 			productName = Cafe;
 			productReference = E207A44F2B3557ED008B6A15 /* Cafe.app */;
@@ -431,6 +437,7 @@
 				E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */,
 				E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 				E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = E207A4502B3557ED008B6A15 /* Products */;
 			projectDirPath = "";
@@ -493,6 +500,7 @@
 				E207A4E92B39BBE7008B6A15 /* OrderService.swift in Sources */,
 				E207A4D42B395C4E008B6A15 /* MenuModuleBuilder.swift in Sources */,
 				E207A4F32B39C2C2008B6A15 /* OrderViewController.swift in Sources */,
+				E207A4FF2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift in Sources */,
 				E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */,
 				E207A4CD2B394E02008B6A15 /* LocationManager.swift in Sources */,
 				E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */,
@@ -757,6 +765,14 @@
 				minimumVersion = 7.10.1;
 			};
 		};
+		E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -799,6 +815,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		E207A4FC2B39DEE5008B6A15 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

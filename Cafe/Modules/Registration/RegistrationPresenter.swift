@@ -11,6 +11,7 @@ protocol RegistrationPresenterProtocol: AnyObject {
     func checkRegistrationAvailability()
     func registrationButtonTapped()
     func loginButtonTapped()
+    func registrationSuccess()
 }
 
 class RegistrationPresenter {
@@ -54,5 +55,9 @@ extension RegistrationPresenter: RegistrationPresenterProtocol {
     
     func loginButtonTapped() {
         router.navigateToLogin()
+    }
+    
+    func registrationSuccess() {
+        router.navigateToCoffeShopList()
     }
 }

@@ -22,6 +22,7 @@ final class CoffeeService: CoffeeServiceProtocol {
     let provider = MoyaProvider<CoffeeAPI>()
     
     func getCoffeeShops(token: String, completion: @escaping (Result<[CoffeeShop], Error>) -> Void) {
+        UIBlockingProgressHUD.show()
         provider.request(.getCoffeeShops(token: token)) { result in
             switch result {
             case let .success(response):
@@ -30,16 +31,21 @@ final class CoffeeService: CoffeeServiceProtocol {
                     do {
                         let coffeeShops = try JSONDecoder().decode([CoffeeShop].self, from: response.data)
                         completion(.success(coffeeShops))
+                        UIBlockingProgressHUD.dismiss()
                     } catch {
                         completion(.failure(error))
+                        UIBlockingProgressHUD.dismiss()
                     }
                 case 401:
                     completion(.failure(CoffeeRequestError.unauthorized))
+                    UIBlockingProgressHUD.dismiss()
                 default:
                     completion(.failure(CoffeeRequestError.httpStatusCode(response.statusCode)))
+                    UIBlockingProgressHUD.dismiss()
                 }
             case let .failure(error):
                 completion(.failure(error))
+                UIBlockingProgressHUD.dismiss()
             }
         }
     }

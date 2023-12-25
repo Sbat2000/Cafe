@@ -25,5 +25,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }
+    
+    static func getCurrentWindow() -> UIWindow? {
+        let scene = UIApplication.shared.connectedScenes.first
+        guard let windowScene = scene as? UIWindowScene else { return nil }
+        return windowScene.windows.first(where: { $0.isKeyWindow })
+    }
 }
 
