@@ -14,6 +14,7 @@ protocol CoffeeShopListPresenterProtocol: AnyObject {
     func refreshCoffeeShops()
     func getCoffeesCount() -> Int
     func getCoffeeShop(at indexPath: IndexPath) -> CoffeeShopViewModel
+    func didSelectCoffeeShop(with coffeeShopId: Int)
 }
 
 class CoffeeShopListPresenter {
@@ -55,5 +56,9 @@ extension CoffeeShopListPresenter: CoffeeShopListPresenterProtocol {
     
     func getCoffeeShop(at indexPath: IndexPath) -> CoffeeShopViewModel {
         coffeeShops[indexPath.row]
+    }
+    
+    func didSelectCoffeeShop(with coffeeShopId: Int) {
+        router.navigateToMenu(with: coffeeShopId)
     }
 }
