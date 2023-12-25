@@ -115,8 +115,12 @@ extension CoffeeShopListViewController: UITableViewDelegate, UITableViewDataSour
             return UITableViewCell()
         }
     }
-}
-
-extension CoffeeShopListViewController: CLLocationManagerDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let coffeeShop = presenter?.getCoffeeShop(at: indexPath) else {
+            return
+        }
+        
+        presenter?.didSelectCoffeeShop(with: coffeeShop.id)
+    }
 }

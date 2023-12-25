@@ -14,9 +14,9 @@ protocol CoffeeShopListInteractorProtocol: AnyObject {
 class CoffeeShopListInteractor: CoffeeShopListInteractorProtocol {
     weak var presenter: CoffeeShopListPresenterProtocol?
     
-    private var coffeeService: CoffeeServiceProtocol
-    private var tokenStorage: TokenStorageProtocol
-    private var locationManager: LocationManagerProtocol
+    private let coffeeService: CoffeeServiceProtocol
+    private let tokenStorage: TokenStorageProtocol
+    private let locationManager: LocationManagerProtocol
     
     init(coffeeService: CoffeeServiceProtocol, tokenStorage: TokenStorageProtocol, locationManager: LocationManagerProtocol) {
         self.coffeeService = coffeeService
