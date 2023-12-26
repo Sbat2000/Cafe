@@ -8,10 +8,10 @@
 import UIKit
 
 class MapModuleBuilder {
-    static func build() -> MapViewController {
-        let interactor = MapInteractor()
+    static func build(coffee: [CoffeeShopViewModel]) -> MapViewController {
+        let interactor = MapInteractor(locationManager: AppDependencies.shared.locationManager)
         let router = MapRouter()
-        let presenter = MapPresenter(interactor: interactor, router: router)
+        let presenter = MapPresenter(interactor: interactor, router: router, coffee: coffee)
         let viewController = MapViewController()
         presenter.view  = viewController
         viewController.presenter = presenter

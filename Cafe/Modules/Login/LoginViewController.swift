@@ -11,6 +11,7 @@ protocol LoginViewProtocol: AnyObject {
     func getPassword() -> String
     func getEmail() -> String
     func setLoginButtonEnabled(_ isEnabled: Bool)
+    func showErrorAlert(with message: String)
 }
 
 class LoginViewController: UIViewController {
@@ -21,7 +22,7 @@ class LoginViewController: UIViewController {
     
     private let passwordView = CustomContainerView(labelText: "Пароль", textFieldPlaceholder: "*******", isSecure: true, spacing: 10)
     
-    private let loginButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Войти", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)
@@ -41,7 +42,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Public
     var presenter: LoginPresenterProtocol?
-
+    
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -150,5 +151,11 @@ extension LoginViewController: LoginViewProtocol {
 extension LoginViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         self.presenter?.checkLoginAvailability()
+    }
+    
+    func showErrorAlert(with message: String) {
+        let alert = UIAlertController(title: "Ошибка", message: "Ошибка! не удалось залогиниться \(message)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
     }
 }

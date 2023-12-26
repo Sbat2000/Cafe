@@ -51,7 +51,7 @@ final class MenuItemCell: UICollectionViewCell {
         return label
     }()
     
-    private let quantityLabel: UILabel = {
+    private lazy var quantityLabel: UILabel = {
         let label = UILabel()
         label.text = "0"
         label.font = UIFont.systemFont(ofSize: 14)
@@ -60,7 +60,7 @@ final class MenuItemCell: UICollectionViewCell {
         return label
     }()
     
-    private let minusButton: UIButton = {
+    private lazy var minusButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "minus"), for: .normal)
         button.tintColor = UIColor(resource: .brown)
@@ -68,7 +68,7 @@ final class MenuItemCell: UICollectionViewCell {
         return button
     }()
     
-    private let plusButton: UIButton = {
+    private lazy var plusButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "plus"), for: .normal)
         button.tintColor = UIColor(resource: .brown)

@@ -14,7 +14,7 @@ protocol CoffeeShopListViewProtocol: AnyObject {
 
 class CoffeeShopListViewController: UIViewController {
     
-    private let onMapButton: UIButton = {
+    private lazy var onMapButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("На карте", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)

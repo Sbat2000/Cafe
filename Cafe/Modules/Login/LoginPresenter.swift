@@ -10,6 +10,7 @@ protocol LoginPresenterProtocol: AnyObject {
     func loginButtonTapped()
     func checkLoginAvailability()
     func loginSucceeded()
+    func registrationFailedWithError(_ error: Error)
 }
 
 class LoginPresenter {
@@ -51,5 +52,9 @@ extension LoginPresenter: LoginPresenterProtocol {
     
     func loginSucceeded() {
         router.navigateToCoffeShopList()
+    }
+    
+    func registrationFailedWithError(_ error: Error) {
+        view?.showErrorAlert(with: error.localizedDescription)
     }
 }

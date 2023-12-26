@@ -14,7 +14,7 @@ protocol MenuViewProtocol: AnyObject {
 class MenuViewController: UIViewController {
     
     //MARK: - UI Elements
-    private let goToPayButton: UIButton = {
+    private lazy var goToPayButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Перейти к оплате", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)

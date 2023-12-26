@@ -13,6 +13,7 @@ protocol RegistrationViewProtocol: AnyObject {
     func getConfirmPassword() -> String
     func getEmail() -> String
     func setRegistrationButtonEnabled(_ isEnabled: Bool)
+    func showErrorAlert(with message: String)
 }
 
 class RegistrationViewController: UIViewController {
@@ -24,7 +25,7 @@ class RegistrationViewController: UIViewController {
     
     private let confirmPasswordView = CustomContainerView(labelText: "Повторите пароль", textFieldPlaceholder: "*******", isSecure: true, spacing: 10)
     
-    private let registrationButton: UIButton = {
+    private lazy var registrationButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Регистрация", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)
@@ -35,7 +36,7 @@ class RegistrationViewController: UIViewController {
         return button
     }()
     
-    private let loginButton: UIButton = {
+    private lazy var loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("У меня уже есть аккаунт", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)
@@ -180,4 +181,12 @@ extension RegistrationViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         self.presenter?.checkRegistrationAvailability()
     }
+    
+    
+    func showErrorAlert(with message: String) {
+        let alert = UIAlertController(title: "Ошибка", message: "Ошибка! Возмжно такой аккаунт уже есть: \(message)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
 }

@@ -29,6 +29,7 @@ class LoginInteractor: LoginInteractorProtocol {
                 self?.presenter?.loginSucceeded()
             case .failure(let error):
                 print("Ошибка получения токена: \(error.localizedDescription)")
+                self?.presenter?.registrationFailedWithError(error)
             }
         }
     }
