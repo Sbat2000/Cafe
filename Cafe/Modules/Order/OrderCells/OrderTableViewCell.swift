@@ -57,7 +57,7 @@ class OrderTableViewCell: UITableViewCell {
         return label
     }()
     
-    private let minusButton: UIButton = {
+    private lazy var minusButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "minus"), for: .normal)
         button.tintColor = UIColor(resource: .brown)
@@ -65,7 +65,7 @@ class OrderTableViewCell: UITableViewCell {
         return button
     }()
     
-    private let plusButton: UIButton = {
+    private lazy var plusButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(systemName: "plus"), for: .normal)
         button.tintColor = UIColor(resource: .brown)

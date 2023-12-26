@@ -35,6 +35,7 @@ class CustomContainerView: UIView {
         
         textField = UITextField()
         textField.isSecureTextEntry = isSecure
+        textField.textContentType = .oneTimeCode
         textField.placeholder = textFieldPlaceholder
         textField.textColor = UIColor(resource: .brown)
         textField.layer.cornerRadius = 24.5

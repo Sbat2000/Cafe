@@ -27,6 +27,7 @@ class RegistrationInteractor: RegistrationInteractorProtocol {
                 self?.presenter?.registrationSuccess()
             case .failure(let error):
                 print("Ошибка регистрации: \(error.localizedDescription)")
+                self?.presenter?.loginFailedWithError(error)
             }
         }
     }

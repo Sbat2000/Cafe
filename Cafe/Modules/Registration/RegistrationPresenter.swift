@@ -12,6 +12,7 @@ protocol RegistrationPresenterProtocol: AnyObject {
     func registrationButtonTapped()
     func loginButtonTapped()
     func registrationSuccess()
+    func loginFailedWithError(_ error: Error)
 }
 
 class RegistrationPresenter {
@@ -60,4 +61,8 @@ extension RegistrationPresenter: RegistrationPresenterProtocol {
     func registrationSuccess() {
         router.navigateToCoffeShopList()
     }
+    
+    func loginFailedWithError(_ error: Error) {
+           view?.showErrorAlert(with: error.localizedDescription)
+       }
 }

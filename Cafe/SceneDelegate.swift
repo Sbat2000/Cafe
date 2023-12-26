@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import YandexMapsMobile
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,6 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             startViewController = RegistrationModuleBuilder.build()
         }
         let navigationVC = UINavigationController(rootViewController: startViewController ?? UIViewController())
+        YMKMapKit.setLocale("ru_RU")
         window?.rootViewController = navigationVC
         window?.makeKeyAndVisible()
     }

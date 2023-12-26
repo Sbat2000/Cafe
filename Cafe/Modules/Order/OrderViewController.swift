@@ -16,7 +16,7 @@ class OrderViewController: UIViewController {
     
     //MARK: -
     
-    private let payButton: UIButton = {
+    private lazy var payButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Оплатить", for: .normal)
         button.tintColor = UIColor(resource: .lightBrown)
