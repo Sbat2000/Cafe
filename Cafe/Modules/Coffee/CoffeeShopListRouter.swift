@@ -10,6 +10,7 @@ import UIKit
 protocol CoffeeShopListRouterProtocol {
     func navigateToRegistration()
     func navigateToMenu(with coffeeShopId: Int)
+    func navigateToMap()
 }
 
 class CoffeeShopListRouter: CoffeeShopListRouterProtocol {
@@ -24,6 +25,13 @@ class CoffeeShopListRouter: CoffeeShopListRouterProtocol {
     func navigateToMenu(with coffeeShopId: Int) {
         let menuViewController = MenuModuleBuilder.build(with: coffeeShopId)
         if let window = viewController?.view.window, let navController = window.rootViewController as? UINavigationController {            navController.pushViewController(menuViewController, animated: true)
+        }
+    }
+    
+    func navigateToMap() {
+        let mapViewController = MapModuleBuilder.build()
+        
+        if let window = viewController?.view.window, let navController = window.rootViewController as? UINavigationController {            navController.pushViewController(mapViewController, animated: true)
         }
     }
 }

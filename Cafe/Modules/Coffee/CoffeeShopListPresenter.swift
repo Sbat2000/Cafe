@@ -31,7 +31,7 @@ class CoffeeShopListPresenter {
 
 extension CoffeeShopListPresenter: CoffeeShopListPresenterProtocol {
     func onMapButtonTapped() {
-        
+        router.navigateToMap()
     }
     
     func refreshCoffeeShops() {
