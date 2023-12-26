@@ -7,21 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88960B1F08B5A3F051B2ECB4 /* Pods_Cafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6794A2CA8ABC8A06A28B8E08 /* Pods_Cafe.framework */; };
 		E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4522B3557ED008B6A15 /* AppDelegate.swift */; };
 		E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4542B3557ED008B6A15 /* SceneDelegate.swift */; };
-		E207A4572B3557ED008B6A15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4562B3557ED008B6A15 /* ViewController.swift */; };
 		E207A45C2B3557EF008B6A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E207A45B2B3557EF008B6A15 /* Assets.xcassets */; };
 		E207A45F2B3557EF008B6A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A45D2B3557EF008B6A15 /* LaunchScreen.storyboard */; };
+		E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4712B355A2F008B6A15 /* CombineMoya */; };
+		E207A4742B355A2F008B6A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4732B355A2F008B6A15 /* Moya */; };
+		E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4752B355A2F008B6A15 /* ReactiveMoya */; };
+		E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4772B355A2F008B6A15 /* RxMoya */; };
+		E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */; };
+		E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */; };
+		E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */; };
+		E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */; };
+		E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */; };
+		E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */; };
+		E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48A2B38140B008B6A15 /* AuthAPI.swift */; };
+		E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48C2B38264D008B6A15 /* AuthService.swift */; };
+		E207A48F2B3826B1008B6A15 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A48E2B3826B1008B6A15 /* UserModel.swift */; };
+		E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4902B385EB0008B6A15 /* AuthToken.swift */; };
+		E207A4982B3864E1008B6A15 /* LoginModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */; };
+		E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4942B3864E1008B6A15 /* LoginPresenter.swift */; };
+		E207A49A2B3864E1008B6A15 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4952B3864E1008B6A15 /* LoginRouter.swift */; };
+		E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4962B3864E1008B6A15 /* LoginViewController.swift */; };
+		E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4972B3864E1008B6A15 /* LoginInteractor.swift */; };
+		E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4A72B3872D3008B6A15 /* AppDependencies.swift */; };
+		E207A4AD2B387E08008B6A15 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */; };
+		E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */; };
+		E207A4B82B388597008B6A15 /* CoffeeShopListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */; };
+		E207A4B92B388597008B6A15 /* CoffeeShopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */; };
+		E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */; };
+		E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */; };
+		E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */; };
+		E207A4C02B392285008B6A15 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */; };
+		E207A4C22B39255D008B6A15 /* CoffeeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C12B39255D008B6A15 /* CoffeeService.swift */; };
+		E207A4C62B392625008B6A15 /* CoffeeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C52B392625008B6A15 /* CoffeeShop.swift */; };
+		E207A4C92B393868008B6A15 /* CoffeeShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */; };
+		E207A4CB2B39476D008B6A15 /* CoffeShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */; };
+		E207A4CD2B394E02008B6A15 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4CC2B394E02008B6A15 /* LocationManager.swift */; };
+		E207A4D42B395C4E008B6A15 /* MenuModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4CF2B395C4E008B6A15 /* MenuModuleBuilder.swift */; };
+		E207A4D52B395C4E008B6A15 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4D02B395C4E008B6A15 /* MenuPresenter.swift */; };
+		E207A4D62B395C4E008B6A15 /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4D12B395C4E008B6A15 /* MenuRouter.swift */; };
+		E207A4D72B395C4E008B6A15 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4D22B395C4E008B6A15 /* MenuViewController.swift */; };
+		E207A4D82B395C4E008B6A15 /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4D32B395C4E008B6A15 /* MenuInteractor.swift */; };
+		E207A4DB2B395D99008B6A15 /* MenuApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4DA2B395D99008B6A15 /* MenuApi.swift */; };
+		E207A4DD2B395E81008B6A15 /* MenuService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4DC2B395E81008B6A15 /* MenuService.swift */; };
+		E207A4E12B395F4D008B6A15 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4E02B395F4D008B6A15 /* MenuItem.swift */; };
+		E207A4E42B399FD4008B6A15 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4E32B399FD4008B6A15 /* MenuItemCell.swift */; };
+		E207A4E72B39A564008B6A15 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4E62B39A564008B6A15 /* Kingfisher */; };
+		E207A4E92B39BBE7008B6A15 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4E82B39BBE7008B6A15 /* OrderService.swift */; };
+		E207A4F02B39C2C2008B6A15 /* OrderModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4EB2B39C2C2008B6A15 /* OrderModuleBuilder.swift */; };
+		E207A4F12B39C2C2008B6A15 /* OrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4EC2B39C2C2008B6A15 /* OrderPresenter.swift */; };
+		E207A4F22B39C2C2008B6A15 /* OrderRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4ED2B39C2C2008B6A15 /* OrderRouter.swift */; };
+		E207A4F32B39C2C2008B6A15 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4EE2B39C2C2008B6A15 /* OrderViewController.swift */; };
+		E207A4F42B39C2C2008B6A15 /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4EF2B39C2C2008B6A15 /* OrderInteractor.swift */; };
+		E207A4F72B39C5C5008B6A15 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4F62B39C5C5008B6A15 /* OrderTableViewCell.swift */; };
+		E207A4FA2B39CA28008B6A15 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4F92B39CA28008B6A15 /* OrderItem.swift */; };
+		E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E207A4FC2B39DEE5008B6A15 /* ProgressHUD */; };
+		E207A4FF2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */; };
+		E29CA4932B39EE4800285CBB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E29CA4922B39EE4800285CBB /* SnapKit */; };
+		E29CA49A2B3AB1C200285CBB /* MapModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA4952B3AB1C200285CBB /* MapModuleBuilder.swift */; };
+		E29CA49B2B3AB1C200285CBB /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA4962B3AB1C200285CBB /* MapPresenter.swift */; };
+		E29CA49C2B3AB1C200285CBB /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA4972B3AB1C200285CBB /* MapRouter.swift */; };
+		E29CA49D2B3AB1C200285CBB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA4982B3AB1C200285CBB /* MapViewController.swift */; };
+		E29CA49E2B3AB1C200285CBB /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA4992B3AB1C200285CBB /* MapInteractor.swift */; };
+		E29CA4A02B3AB4F600285CBB /* BaseMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29CA49F2B3AB4F600285CBB /* BaseMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14B4EE9C6009398DECEF386B /* Pods-Cafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe.release.xcconfig"; path = "Target Support Files/Pods-Cafe/Pods-Cafe.release.xcconfig"; sourceTree = "<group>"; };
+		6794A2CA8ABC8A06A28B8E08 /* Pods_Cafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B11F6085A562785F1C882AE /* Pods-Cafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cafe.debug.xcconfig"; path = "Target Support Files/Pods-Cafe/Pods-Cafe.debug.xcconfig"; sourceTree = "<group>"; };
 		E207A44F2B3557ED008B6A15 /* Cafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E207A4522B3557ED008B6A15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E207A4542B3557ED008B6A15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E207A4562B3557ED008B6A15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E207A45B2B3557EF008B6A15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E207A45E2B3557EF008B6A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E207A4602B3557EF008B6A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPresenter.swift; sourceTree = "<group>"; };
+		E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationRouter.swift; sourceTree = "<group>"; };
+		E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationInteractor.swift; sourceTree = "<group>"; };
+		E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
+		E207A48A2B38140B008B6A15 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
+		E207A48C2B38264D008B6A15 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E207A48E2B3826B1008B6A15 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E207A4902B385EB0008B6A15 /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4942B3864E1008B6A15 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E207A4952B3864E1008B6A15 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		E207A4962B3864E1008B6A15 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E207A4972B3864E1008B6A15 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		E207A4A72B3872D3008B6A15 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListPresenter.swift; sourceTree = "<group>"; };
+		E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListRouter.swift; sourceTree = "<group>"; };
+		E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListViewController.swift; sourceTree = "<group>"; };
+		E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopListInteractor.swift; sourceTree = "<group>"; };
+		E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
+		E207A4C12B39255D008B6A15 /* CoffeeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeService.swift; sourceTree = "<group>"; };
+		E207A4C52B392625008B6A15 /* CoffeeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShop.swift; sourceTree = "<group>"; };
+		E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopTableViewCell.swift; sourceTree = "<group>"; };
+		E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeShopViewModel.swift; sourceTree = "<group>"; };
+		E207A4CC2B394E02008B6A15 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E207A4CF2B395C4E008B6A15 /* MenuModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4D02B395C4E008B6A15 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		E207A4D12B395C4E008B6A15 /* MenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
+		E207A4D22B395C4E008B6A15 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E207A4D32B395C4E008B6A15 /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		E207A4DA2B395D99008B6A15 /* MenuApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuApi.swift; sourceTree = "<group>"; };
+		E207A4DC2B395E81008B6A15 /* MenuService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuService.swift; sourceTree = "<group>"; };
+		E207A4E02B395F4D008B6A15 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		E207A4E32B399FD4008B6A15 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		E207A4E82B39BBE7008B6A15 /* OrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
+		E207A4EB2B39C2C2008B6A15 /* OrderModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderModuleBuilder.swift; sourceTree = "<group>"; };
+		E207A4EC2B39C2C2008B6A15 /* OrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPresenter.swift; sourceTree = "<group>"; };
+		E207A4ED2B39C2C2008B6A15 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
+		E207A4EE2B39C2C2008B6A15 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		E207A4EF2B39C2C2008B6A15 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
+		E207A4F62B39C5C5008B6A15 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		E207A4F92B39CA28008B6A15 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
+		E29CA4952B3AB1C200285CBB /* MapModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModuleBuilder.swift; sourceTree = "<group>"; };
+		E29CA4962B3AB1C200285CBB /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		E29CA4972B3AB1C200285CBB /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		E29CA4982B3AB1C200285CBB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E29CA4992B3AB1C200285CBB /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		E29CA49F2B3AB4F600285CBB /* BaseMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +143,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E207A4762B355A2F008B6A15 /* ReactiveMoya in Frameworks */,
+				E29CA4932B39EE4800285CBB /* SnapKit in Frameworks */,
+				E207A4742B355A2F008B6A15 /* Moya in Frameworks */,
+				E207A4FD2B39DEE5008B6A15 /* ProgressHUD in Frameworks */,
+				E207A4E72B39A564008B6A15 /* Kingfisher in Frameworks */,
+				E207A4722B355A2F008B6A15 /* CombineMoya in Frameworks */,
+				E207A4782B355A2F008B6A15 /* RxMoya in Frameworks */,
+				E207A4AD2B387E08008B6A15 /* SwiftKeychainWrapper in Frameworks */,
+				88960B1F08B5A3F051B2ECB4 /* Pods_Cafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1894E31D6381C22F00A82B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B11F6085A562785F1C882AE /* Pods-Cafe.debug.xcconfig */,
+				14B4EE9C6009398DECEF386B /* Pods-Cafe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		85E7DCD90C7AD4F7A817712D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6794A2CA8ABC8A06A28B8E08 /* Pods_Cafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E207A4462B3557ED008B6A15 = {
 			isa = PBXGroup;
 			children = (
 				E207A4512B3557ED008B6A15 /* Cafe */,
 				E207A4502B3557ED008B6A15 /* Products */,
+				1894E31D6381C22F00A82B80 /* Pods */,
+				85E7DCD90C7AD4F7A817712D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +196,233 @@
 		E207A4512B3557ED008B6A15 /* Cafe */ = {
 			isa = PBXGroup;
 			children = (
+				E207A4B12B3884B5008B6A15 /* Custom UI */,
+				E207A4892B3813F1008B6A15 /* Services */,
+				E207A4832B3560F6008B6A15 /* Modules */,
 				E207A4522B3557ED008B6A15 /* AppDelegate.swift */,
 				E207A4542B3557ED008B6A15 /* SceneDelegate.swift */,
-				E207A4562B3557ED008B6A15 /* ViewController.swift */,
 				E207A45B2B3557EF008B6A15 /* Assets.xcassets */,
 				E207A45D2B3557EF008B6A15 /* LaunchScreen.storyboard */,
 				E207A4602B3557EF008B6A15 /* Info.plist */,
 			);
 			path = Cafe;
+			sourceTree = "<group>";
+		};
+		E207A4832B3560F6008B6A15 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E29CA4942B3AB1B400285CBB /* Map */,
+				E207A4EA2B39C295008B6A15 /* Order */,
+				E207A4CE2B395C3A008B6A15 /* Menu */,
+				E207A4B22B3884C1008B6A15 /* Coffee */,
+				E207A4922B3864D0008B6A15 /* Login */,
+				E207A4842B3560FF008B6A15 /* Registration */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E207A4842B3560FF008B6A15 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				E207A47C2B3560E1008B6A15 /* RegistrationViewController.swift */,
+				E207A47D2B3560E1008B6A15 /* RegistrationInteractor.swift */,
+				E207A47A2B3560E1008B6A15 /* RegistrationPresenter.swift */,
+				E207A4792B3560E1008B6A15 /* RegistrationModuleBuilder.swift */,
+				E207A47B2B3560E1008B6A15 /* RegistrationRouter.swift */,
+				E207A4C32B392607008B6A15 /* Models */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		E207A4892B3813F1008B6A15 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4AA2B387DE0008B6A15 /* Token Storage */,
+				E207A4A92B387DD0008B6A15 /* Network Layer */,
+				E207A4A72B3872D3008B6A15 /* AppDependencies.swift */,
+				E207A4CC2B394E02008B6A15 /* LocationManager.swift */,
+				E207A4E82B39BBE7008B6A15 /* OrderService.swift */,
+				E207A4FE2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E207A4922B3864D0008B6A15 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4962B3864E1008B6A15 /* LoginViewController.swift */,
+				E207A4972B3864E1008B6A15 /* LoginInteractor.swift */,
+				E207A4942B3864E1008B6A15 /* LoginPresenter.swift */,
+				E207A4932B3864E1008B6A15 /* LoginModuleBuilder.swift */,
+				E207A4952B3864E1008B6A15 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E207A4A92B387DD0008B6A15 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4D92B395D7F008B6A15 /* Menu */,
+				E207A4BE2B392213008B6A15 /* Coffee */,
+				E207A4BD2B392205008B6A15 /* Auth */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		E207A4AA2B387DE0008B6A15 /* Token Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4AE2B387E6C008B6A15 /* TokenStorage.swift */,
+			);
+			path = "Token Storage";
+			sourceTree = "<group>";
+		};
+		E207A4B12B3884B5008B6A15 /* Custom UI */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4872B37E9B8008B6A15 /* CustomContainerView.swift */,
+			);
+			path = "Custom UI";
+			sourceTree = "<group>";
+		};
+		E207A4B22B3884C1008B6A15 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4C72B393854008B6A15 /* TableViewCells */,
+				E207A4B62B388597008B6A15 /* CoffeeShopListViewController.swift */,
+				E207A4B72B388597008B6A15 /* CoffeeShopListInteractor.swift */,
+				E207A4B42B388597008B6A15 /* CoffeeShopListPresenter.swift */,
+				E207A4B32B388597008B6A15 /* CoffeeShopListModuleBuilder.swift */,
+				E207A4B52B388597008B6A15 /* CoffeeShopListRouter.swift */,
+				E207A4C42B392615008B6A15 /* Models */,
+			);
+			path = Coffee;
+			sourceTree = "<group>";
+		};
+		E207A4BD2B392205008B6A15 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48A2B38140B008B6A15 /* AuthAPI.swift */,
+				E207A48C2B38264D008B6A15 /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E207A4BE2B392213008B6A15 /* Coffee */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4BF2B392285008B6A15 /* CoffeeAPI.swift */,
+				E207A4C12B39255D008B6A15 /* CoffeeService.swift */,
+			);
+			path = Coffee;
+			sourceTree = "<group>";
+		};
+		E207A4C32B392607008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A48E2B3826B1008B6A15 /* UserModel.swift */,
+				E207A4902B385EB0008B6A15 /* AuthToken.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E207A4C42B392615008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4C52B392625008B6A15 /* CoffeeShop.swift */,
+				E207A4CA2B39476D008B6A15 /* CoffeShopViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E207A4C72B393854008B6A15 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4C82B393868008B6A15 /* CoffeeShopTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		E207A4CE2B395C3A008B6A15 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4E22B399F0A008B6A15 /* ColeectionViewCells */,
+				E207A4DF2B395F41008B6A15 /* Models */,
+				E207A4D22B395C4E008B6A15 /* MenuViewController.swift */,
+				E207A4CF2B395C4E008B6A15 /* MenuModuleBuilder.swift */,
+				E207A4D02B395C4E008B6A15 /* MenuPresenter.swift */,
+				E207A4D12B395C4E008B6A15 /* MenuRouter.swift */,
+				E207A4D32B395C4E008B6A15 /* MenuInteractor.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E207A4D92B395D7F008B6A15 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4DA2B395D99008B6A15 /* MenuApi.swift */,
+				E207A4DC2B395E81008B6A15 /* MenuService.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		E207A4DF2B395F41008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4E02B395F4D008B6A15 /* MenuItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E207A4E22B399F0A008B6A15 /* ColeectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4E32B399FD4008B6A15 /* MenuItemCell.swift */,
+			);
+			path = ColeectionViewCells;
+			sourceTree = "<group>";
+		};
+		E207A4EA2B39C295008B6A15 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4F82B39CA18008B6A15 /* Models */,
+				E207A4F52B39C59F008B6A15 /* OrderCells */,
+				E207A4EB2B39C2C2008B6A15 /* OrderModuleBuilder.swift */,
+				E207A4EC2B39C2C2008B6A15 /* OrderPresenter.swift */,
+				E207A4ED2B39C2C2008B6A15 /* OrderRouter.swift */,
+				E207A4EE2B39C2C2008B6A15 /* OrderViewController.swift */,
+				E207A4EF2B39C2C2008B6A15 /* OrderInteractor.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		E207A4F52B39C59F008B6A15 /* OrderCells */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4F62B39C5C5008B6A15 /* OrderTableViewCell.swift */,
+			);
+			path = OrderCells;
+			sourceTree = "<group>";
+		};
+		E207A4F82B39CA18008B6A15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E207A4F92B39CA28008B6A15 /* OrderItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E29CA4942B3AB1B400285CBB /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E29CA4952B3AB1C200285CBB /* MapModuleBuilder.swift */,
+				E29CA4962B3AB1C200285CBB /* MapPresenter.swift */,
+				E29CA4972B3AB1C200285CBB /* MapRouter.swift */,
+				E29CA4982B3AB1C200285CBB /* MapViewController.swift */,
+				E29CA4992B3AB1C200285CBB /* MapInteractor.swift */,
+				E29CA49F2B3AB4F600285CBB /* BaseMapView.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,15 +432,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E207A4632B3557EF008B6A15 /* Build configuration list for PBXNativeTarget "Cafe" */;
 			buildPhases = (
+				36F7355160E7863F73EA8496 /* [CP] Check Pods Manifest.lock */,
 				E207A44B2B3557ED008B6A15 /* Sources */,
 				E207A44C2B3557ED008B6A15 /* Frameworks */,
 				E207A44D2B3557ED008B6A15 /* Resources */,
+				81FE2943BD3AEC45738C016D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Cafe;
+			packageProductDependencies = (
+				E207A4712B355A2F008B6A15 /* CombineMoya */,
+				E207A4732B355A2F008B6A15 /* Moya */,
+				E207A4752B355A2F008B6A15 /* ReactiveMoya */,
+				E207A4772B355A2F008B6A15 /* RxMoya */,
+				E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */,
+				E207A4E62B39A564008B6A15 /* Kingfisher */,
+				E207A4FC2B39DEE5008B6A15 /* ProgressHUD */,
+				E29CA4922B39EE4800285CBB /* SnapKit */,
+			);
 			productName = Cafe;
 			productReference = E207A44F2B3557ED008B6A15 /* Cafe.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +481,13 @@
 				Base,
 			);
 			mainGroup = E207A4462B3557ED008B6A15;
+			packageReferences = (
+				E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */,
+				E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+				E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
+				E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = E207A4502B3557ED008B6A15 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,14 +509,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36F7355160E7863F73EA8496 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81FE2943BD3AEC45738C016D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cafe/Pods-Cafe-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cafe/Pods-Cafe-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cafe/Pods-Cafe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E207A44B2B3557ED008B6A15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E207A4572B3557ED008B6A15 /* ViewController.swift in Sources */,
+				E207A4D82B395C4E008B6A15 /* MenuInteractor.swift in Sources */,
+				E207A4C62B392625008B6A15 /* CoffeeShop.swift in Sources */,
+				E207A4C02B392285008B6A15 /* CoffeeAPI.swift in Sources */,
+				E29CA49A2B3AB1C200285CBB /* MapModuleBuilder.swift in Sources */,
+				E207A49C2B3864E1008B6A15 /* LoginInteractor.swift in Sources */,
+				E207A4C22B39255D008B6A15 /* CoffeeService.swift in Sources */,
+				E207A47F2B3560E1008B6A15 /* RegistrationPresenter.swift in Sources */,
+				E29CA49B2B3AB1C200285CBB /* MapPresenter.swift in Sources */,
+				E207A4BA2B388597008B6A15 /* CoffeeShopListRouter.swift in Sources */,
 				E207A4532B3557ED008B6A15 /* AppDelegate.swift in Sources */,
+				E207A4992B3864E1008B6A15 /* LoginPresenter.swift in Sources */,
+				E207A4D62B395C4E008B6A15 /* MenuRouter.swift in Sources */,
+				E207A47E2B3560E1008B6A15 /* RegistrationModuleBuilder.swift in Sources */,
+				E207A4DB2B395D99008B6A15 /* MenuApi.swift in Sources */,
+				E207A4C92B393868008B6A15 /* CoffeeShopTableViewCell.swift in Sources */,
+				E207A4D72B395C4E008B6A15 /* MenuViewController.swift in Sources */,
+				E207A4882B37E9B8008B6A15 /* CustomContainerView.swift in Sources */,
+				E207A4FA2B39CA28008B6A15 /* OrderItem.swift in Sources */,
+				E207A4B92B388597008B6A15 /* CoffeeShopListPresenter.swift in Sources */,
+				E29CA49D2B3AB1C200285CBB /* MapViewController.swift in Sources */,
+				E207A4DD2B395E81008B6A15 /* MenuService.swift in Sources */,
+				E207A4F12B39C2C2008B6A15 /* OrderPresenter.swift in Sources */,
+				E207A4AF2B387E6C008B6A15 /* TokenStorage.swift in Sources */,
+				E207A4812B3560E1008B6A15 /* RegistrationViewController.swift in Sources */,
+				E207A4CB2B39476D008B6A15 /* CoffeShopViewModel.swift in Sources */,
+				E207A4912B385EB0008B6A15 /* AuthToken.swift in Sources */,
+				E207A4F02B39C2C2008B6A15 /* OrderModuleBuilder.swift in Sources */,
+				E207A4822B3560E1008B6A15 /* RegistrationInteractor.swift in Sources */,
+				E29CA49E2B3AB1C200285CBB /* MapInteractor.swift in Sources */,
+				E207A49A2B3864E1008B6A15 /* LoginRouter.swift in Sources */,
+				E207A4F42B39C2C2008B6A15 /* OrderInteractor.swift in Sources */,
+				E207A4F22B39C2C2008B6A15 /* OrderRouter.swift in Sources */,
+				E207A4982B3864E1008B6A15 /* LoginModuleBuilder.swift in Sources */,
 				E207A4552B3557ED008B6A15 /* SceneDelegate.swift in Sources */,
+				E207A48D2B38264D008B6A15 /* AuthService.swift in Sources */,
+				E207A4F72B39C5C5008B6A15 /* OrderTableViewCell.swift in Sources */,
+				E207A4E92B39BBE7008B6A15 /* OrderService.swift in Sources */,
+				E207A4D42B395C4E008B6A15 /* MenuModuleBuilder.swift in Sources */,
+				E207A4F32B39C2C2008B6A15 /* OrderViewController.swift in Sources */,
+				E207A4FF2B39E0B0008B6A15 /* UIBlockingProgressHUD.swift in Sources */,
+				E29CA49C2B3AB1C200285CBB /* MapRouter.swift in Sources */,
+				E207A49B2B3864E1008B6A15 /* LoginViewController.swift in Sources */,
+				E29CA4A02B3AB4F600285CBB /* BaseMapView.swift in Sources */,
+				E207A4CD2B394E02008B6A15 /* LocationManager.swift in Sources */,
+				E207A4BB2B388597008B6A15 /* CoffeeShopListViewController.swift in Sources */,
+				E207A4BC2B388597008B6A15 /* CoffeeShopListInteractor.swift in Sources */,
+				E207A48B2B38140B008B6A15 /* AuthAPI.swift in Sources */,
+				E207A4D52B395C4E008B6A15 /* MenuPresenter.swift in Sources */,
+				E207A4E42B399FD4008B6A15 /* MenuItemCell.swift in Sources */,
+				E207A4802B3560E1008B6A15 /* RegistrationRouter.swift in Sources */,
+				E207A4B82B388597008B6A15 /* CoffeeShopListModuleBuilder.swift in Sources */,
+				E207A4A82B3872D3008B6A15 /* AppDependencies.swift in Sources */,
+				E207A48F2B3826B1008B6A15 /* UserModel.swift in Sources */,
+				E207A4E12B395F4D008B6A15 /* MenuItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +664,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -254,7 +727,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,12 +748,14 @@
 		};
 		E207A4642B3557EF008B6A15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B11F6085A562785F1C882AE /* Pods-Cafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2Z3KJVPLW;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cafe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,12 +780,14 @@
 		};
 		E207A4652B3557EF008B6A15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14B4EE9C6009398DECEF386B /* Pods-Cafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G2Z3KJVPLW;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Cafe/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -355,6 +832,92 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+		E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+		E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+		E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+		E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E207A4712B355A2F008B6A15 /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		E207A4732B355A2F008B6A15 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		E207A4752B355A2F008B6A15 /* ReactiveMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = ReactiveMoya;
+		};
+		E207A4772B355A2F008B6A15 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4702B355A2F008B6A15 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		E207A4AC2B387E08008B6A15 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4AB2B387E08008B6A15 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+		E207A4E62B39A564008B6A15 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4E52B39A564008B6A15 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E207A4FC2B39DEE5008B6A15 /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E207A4FB2B39DEE5008B6A15 /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
+		E29CA4922B39EE4800285CBB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29CA4912B39EE4800285CBB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E207A4472B3557ED008B6A15 /* Project object */;
 }
